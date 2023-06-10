@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'id="survey-form">
+      <fieldset>
+<!--  -->
+        <label for="name" id="name-label"> Name <input id="name"  placeholder="Enter Your Full Name" type="text" required /></label>
+        <label for="email" id="email-label">Email <input id="email"  placeholder="Enter your Email Address" type="email" required /></label>
+        <label for="age" id="number-label"> Age (optional) <input id="number"  type="number" placeholder="Enter Your Age" min="13" max="120" /></label> <br>
+     <label for="current-role">Which option best describes your current role?
+          <select id="dropdown" name="current-role">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <br> <label for="would-recommend">Would you recommend freeCodeCamp to a friend?
+           <br><br><input id="definitely" type="radio" name="would-recommend" value="definitely" class="inline" /> Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="would-recommend" value="maybe" class="inline" /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" value="not sure" type="radio" name="would-recommend" class="inline" /> Not sure</label>
+<label for="favorite-feature"> 
+<br> 
+What is your favorite feature of freeCodeCamp?
+          <select id="favorite-feature" name="favorite-feature">
+<option value="">Select current role</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open source</option>
+          </select>
+        </label>
+<br> <label for="improvements"> What would you like to see improved? (Check all that apply)
+   <br> <br>
+          <input id="front-end-projects" type="checkbox" required value="front-end-projects" name="front-end-projects" class="inline" /> Front-end Projects <br>
+          <input id="back-end-projects" type="checkbox" required value="back-end-projects" name="back-end-projects" class="inline" /> Back-end Projects
+   <br>      <input id="data-visualization" type="checkbox" required name="data-visualization" value="data-visualization" class="inline" /> Data Visualization
+   <br>       <input id="challenges" type="checkbox" required value="challenges" name="challenges" class="inline" /> Challenges
+     <br>     <input id="open-source-community" type="checkbox" required value="open-source-community" name="open-source-community" class="inline" /> Open Source Community
+     <br>     <input id="glitter-help-rooms" type="checkbox" required value="glitter-help-rooms" name="glitter-help-rooms" class="inline" /> Glitter help rooms
+   <br>       <input id="videos" type="checkbox" required name="videos" value="videos" class="inline" /> Videos
+   <br>       <input id="city-meetups" type="checkbox" required value="city-meetups" name="city-meetups" class="inline" /> City Meetups
+     <br>     <input id="wiki" type="checkbox" required name="wiki" value="wiki" class="inline" /> Wiki
+     <br>     <input id="forum" type="checkbox" required name="forum" value="forum" class="inline" /> Forum
+    <br>      <input id="additional-courses" type="checkbox" required name="additional-courses" value="additional-courses" class="inline" /> Additional Courses
+        </label> <br>
+ <label for="bio">Any comments or suggestions?
+   <br>       <textarea id="comments-suggestions" name="comments-suggestions" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+     <br> <br> <br>    <input id='submit' type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
